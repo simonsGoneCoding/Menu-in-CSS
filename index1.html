@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .wrap {
+            max-width: 1280px;
+            margin: 0 auto;
+            /* overflow: hidden; */
+        }
+
+        nav,
+        header {
+            height: 360px;
+            width: auto;
+        }
+
+        nav {
+            float: left;
+            width: 300px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav a {
+            display: block;
+            line-height: 72px;
+            font-size: 22px;
+            color: black;
+            text-transform: capitalize;
+            text-decoration: none;
+            font-family: sans-serif;
+            padding: 0 15px 0 30px;
+        }
+
+        nav i {
+            position: relative;
+            width: 50px;
+            border-right: solid black 2px;
+            margin-right: 25px;
+            transition: .5s;
+        }
+
+        nav a:hover i {
+            /* font-size: 30px; */
+            margin-right: 50px;
+        }
+
+        header {
+            float: left;
+            width: calc(100% - 300px);
+            background-color: blueviolet;
+            background-image: url(pianino.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        section {
+            margin-top: 50px;
+        }
+
+        section h1 {
+            font-size: 40px;
+            background-color: darkslategray;
+            color: whitesmoke;
+            text-align: center;
+            font-family: sans-serif;
+            padding: 15px 0;
+        }
+
+        nav.mobile {
+            display: none;
+        }
+
+        @media (max-width: 1024px) {
+            nav.desktop {
+                display: none;
+            }
+
+            nav.mobile {
+                position: fixed;
+                display: block;
+            }
+
+            header {
+                width: 100%;
+            }
+
+            nav {
+                background-color: black;
+                width: 90px;
+            }
+
+            nav i {
+                color: antiquewhite;
+            }
+
+            nav i:hover {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap clearfix">
+        <nav class="desktop">
+            <ul>
+                <li><a href="#"><i class="fas fa-play-circle"></i>start</a></li>
+                <li><a href="#"><i class="fas fa-shopping-basket"></i>oferta</a></li>
+                <li><a href="#"><i class="fas fa-wifi"></i>blog</a></li>
+                <li><a href="#"><i class="fas fa-calendar-alt"></i>terminarz</a></li>
+                <li><a href="#"><i class="fab fa-mailchimp"></i>kontakt</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile">
+            <ul>
+                <li><a href="#"><i class="fas fa-play-circle"></i></a></li>
+                <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                <li><a href="#"><i class="fas fa-wifi"></i></a></li>
+                <li><a href="#"><i class="fas fa-calendar-alt"></i></a></li>
+                <li><a href="#"><i class="fab fa-mailchimp"></i></a></li>
+            </ul>
+        </nav>
+        <header></header>
+    </div>
+    <section>
+        <h1>We're all mad in here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consequatur harum,
+            deserunt magni voluptate cupiditate enim excepturi provident hic sunt? Quos accusamus tenetur odio
+            molestias necessitatibus, ea dolor soluta aspernatur.</h1>
+
+    </section>
+
+</body>
+
+</html>
